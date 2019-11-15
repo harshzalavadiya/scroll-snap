@@ -1,0 +1,43 @@
+/* External */
+.rss--carousel-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.rss--slides-container {
+  /* snap mandatory on horizontal axis  */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  display: flex;
+  align-items: center;
+
+  /* Enable Safari touch scrolling physics */
+  -webkit-overflow-scrolling: touch;
+
+  /* Hide Scrollbar */
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+
+.rss--slides-container::-webkit-scrollbar {
+  display: none;
+}
+
+.rss--slide {
+  /* snap align center  */
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+
+/* external */
+.rss--slides-container {
+  height: 50vh;
+}
